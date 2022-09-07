@@ -77,14 +77,17 @@ public class Game {
 
                     if(computer.equals("Rock")) {
                         System.out.println("Draw!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Paper")) {
                         computerPoints++;
                         System.out.println("You lose!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Scissors")) {
                         playerPoints++;
                         System.out.println("You win!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     }
 
@@ -93,13 +96,16 @@ public class Game {
                     if(computer.equals("Rock")) {
                         playerPoints++;
                         System.out.println("You win!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Paper")) {
                         System.out.println("Draw!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Scissors")) {
                         computerPoints++;
                         System.out.println("You lose!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     }
 
@@ -108,13 +114,16 @@ public class Game {
                     if(computer.equals("Rock")) {
                         computerPoints++;
                         System.out.println("You lose!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Paper")) {
                         playerPoints++;
                         System.out.println("You win!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     } else if(computer.equals("Scissors")) {
                         System.out.println("Draw!");
+                        System.out.println("Computer Score: " + computerPoints + " | " + "Your Score: " + playerPoints);
                         play();
                     }
 
@@ -124,6 +133,8 @@ public class Game {
     }
 
     public void callGame() {
+        playerPoints = 0;
+        computerPoints = 0;
         System.out.println("See if you can get five points before the computer!");
         play();
     }
